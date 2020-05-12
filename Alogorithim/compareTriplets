@@ -1,0 +1,19 @@
+public class Solution {
+
+    // Complete the compareTriplets function below.
+    static List<Integer> compareTriplets(List<Integer> a, List<Integer> b) {
+        int c1=0,c2=0;
+    for(int i=0;i<3;i++)
+    {
+        if(a.get(i)>b.get(i))
+        {
+            c1++;
+        }
+        else if(a.get(i)<b.get(i))
+        {
+            c2++;
+        }
+    }
+    return Arrays.asList(c1, c2);
+
+    }
